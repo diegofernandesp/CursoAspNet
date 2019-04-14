@@ -1,0 +1,21 @@
+﻿@model CursoAspNet.Domain.Dto.ItemDto
+
+@{
+    ViewData["Title"] = "CreateOrEdit";
+}
+
+<form id="form" method="post" asp-action="CreateOrEdit" asp-controller="Item" asp-anti-forgery>
+    <input type="hidden" class="form-control" asp-for="Id" />
+    <div class="form-row">
+        <div class="form-group col-md-4">
+            <label for="Citm">Code</label>
+            <input type="text" asp-for="Citm" class="form-control" placeholder="Item Code">
+        </div>
+        <div class="form-group col-md-8">
+            <label for="Ditm">Description</label>
+            <input type="text" asp-for="Ditm" class="form-control" placeholder="Item Description">
+        </div>
+    </div>
+    <button class="btn btn-success">Post</button>
+</form>
+
