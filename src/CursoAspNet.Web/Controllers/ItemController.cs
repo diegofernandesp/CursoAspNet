@@ -27,7 +27,7 @@ namespace CursoAspNet.Web.Controllers
         }
 
         [HttpPost]
-        public IActionResult CreateOrEdit(ItemDto dto)
+        public IActionResult CreateOrEdit([FromBody]ItemDto dto)
         {
             _ItemStorer.Store(dto);
             return View();
