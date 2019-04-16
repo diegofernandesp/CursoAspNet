@@ -1,5 +1,4 @@
-﻿using CursoAspNet.Domain.Dto;
-using CursoAspNet.Domain.Items;
+﻿using CursoAspNet.Domain.Items;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -17,20 +16,20 @@ namespace CursoAspNet.Domain.Orders
             _itemRepository = itemRepository;
         }
 
-        public void Store(OrderDto dto)
+        public void Store(int id, int itemId, string nuor, DateTime dorg, DateTime dtrc, double qtnc)
         {
-            var item = _itemRepository.GetById(dto.ItemId);
+            var item = _itemRepository.GetById(itemId);
             DomainException.When(item == null, "Invalid Item");
 
-            var order = _OrderRepository.GetById(dto.Id);
+            var order = _OrderRepository.GetById(id);
             if(order == null)
             {
-                order = new Order(dto.Nuor, item, dto.Dorg, dto.Dtrc, dto.Qtnc);
+                order = new Order(nuor, item, dorg, dtrc, qtnc);
                 _OrderRepository.Save(order);
             }
             else
             {
-                order.Update(dto.Nuor, item, dto.Dorg, dto.Dtrc, dto.Qtnc);
+                order.Update(nuor, item, dorg, dtrc, qtnc);
             }
         }
     }

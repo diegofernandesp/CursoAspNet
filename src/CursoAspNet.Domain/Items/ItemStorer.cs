@@ -1,5 +1,4 @@
-﻿using CursoAspNet.Domain.Dto;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -14,16 +13,16 @@ namespace CursoAspNet.Domain.Items
             _ItemRepository = itemRepository;
         }
 
-        public void Store (ItemDto dto)
+        public void Store (int id, string citm, string ditm, double qtdp, string poor)
         {
-            var item = _ItemRepository.GetById(dto.Id);
+            var item = _ItemRepository.GetById(id);
             if (item == null)
             {
-                item = new Item(dto.Citm, dto.Ditm, dto.Qtdp, dto.Poor);
+                item = new Item(citm, ditm, qtdp, poor);
                 _ItemRepository.Save(item);
             }
             else
-                item.Update(dto.Citm, dto.Ditm, dto.Qtdp, dto.Poor);
+                item.Update(citm, ditm, qtdp, poor);
         }
     }
 }

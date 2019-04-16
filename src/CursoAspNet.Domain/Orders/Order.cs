@@ -5,7 +5,7 @@ using System.Text;
 
 namespace CursoAspNet.Domain.Orders
 {
-    public class Order
+    public class Order : Entity
     {
         public Item Item { get; private set; }
         public string Nuor { get; private set; }

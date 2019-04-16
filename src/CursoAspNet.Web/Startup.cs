@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using CursoAspNet.DI;
 using CursoAspNet.Domain;
+using CursoAspNet.Web.Filters;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -35,7 +36,9 @@ namespace CursoAspNet.Web
 
             Bootstrap.Configure(services, Configuration.GetConnectionString("DefaultConnection"));
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddMvc(config => {
+                config.Filters.Add(typeof(CustomExceptionFilter));
+            }).SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

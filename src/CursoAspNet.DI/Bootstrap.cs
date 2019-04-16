@@ -17,12 +17,11 @@ namespace CursoAspNet.DI
         {
             services.AddDbContext<ApplicationDbContext>(options =>
               options.UseSqlServer(connectionString));
-            services.AddSingleton(typeof(IRepository<>), typeof(Repository<>));
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
-            services.AddSingleton(typeof(ItemStorer));
             services.AddScoped(typeof(ItemStorer));
-            services.AddSingleton(typeof(OperationStorer));
-            services.AddSingleton(typeof(OrderStorer));
+            services.AddScoped(typeof(OperationStorer));
+            services.AddScoped(typeof(OrderStorer));
+            services.AddScoped(typeof(IUnitOfWork), typeof(UnitOfWork));
         }
     }
 }

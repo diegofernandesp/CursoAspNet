@@ -1,21 +1,42 @@
-﻿@model CursoAspNet.Domain.Dto.ItemDto
+﻿@model CursoAspNet.Web.ViewModels.ItemViewModel
 
 @{
     ViewData["Title"] = "CreateOrEdit";
 }
 
-<form id="form" method="post" asp-action="CreateOrEdit" asp-controller="Item" asp-anti-forgery>
+<form id="form" method="post" asp-action="CreateOrEdit" asp-controller="Item" 
+      data-ajax="true" data-ajax-method="POST" data-ajax-failure="formOnFail" data-ajax-success="window.location = '/Item'"
+      asp-anti-forgery>
     <input type="hidden" class="form-control" asp-for="Id" />
     <div class="form-row">
         <div class="form-group col-md-4">
             <label for="Citm">Code</label>
-            <input type="text" asp-for="Citm" class="form-control" placeholder="Item Code">
+            <input type="text" asp-for="Citm" class="form-control" />
+            <span asp-validation-for="Citm" class="text-danger"></span>
         </div>
         <div class="form-group col-md-8">
             <label for="Ditm">Description</label>
-            <input type="text" asp-for="Ditm" class="form-control" placeholder="Item Description">
+            <input type="text" asp-for="Ditm" class="form-control" />
+            <span asp-validation-for="Ditm" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-2">
+            <label for="Qtdp">Stock Quantity</label>
+            <input type="text" asp-for="Qtdp" class="form-control" />
+            <span asp-validation-for="Qtdp" class="text-danger"></span>
+        </div>
+        <div class="form-group col-md-2">
+            <label for="Poor">Order Policy</label>
+            <input type="text" asp-for="Poor" class="form-control" />
+            <span asp-validation-for="Poor" class="text-danger"></span>
         </div>
     </div>
     <button class="btn btn-success">Post</button>
 </form>
 
+@section Scripts  {
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.unobtrusive-ajax.js"></script>
+}

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace CursoAspNet.Domain.Operations
 {
-    public class Operation
+    public class Operation : Entity
     {
         public Order Order { get; private set; }
         public string Nope { get; private set; }

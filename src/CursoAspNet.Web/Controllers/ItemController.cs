@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using CursoAspNet.Domain.Dto;
 using CursoAspNet.Domain.Items;
+using CursoAspNet.Web.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CursoAspNet.Web.Controllers
@@ -27,10 +27,10 @@ namespace CursoAspNet.Web.Controllers
         }
 
         [HttpPost]
-        public IActionResult CreateOrEdit([FromBody]ItemDto dto)
+        public IActionResult CreateOrEdit(ItemViewModel item)
         {
-            _ItemStorer.Store(dto);
-            return View();
+            _ItemStorer.Store(item.Id, item.Citm, item.Ditm, item.Qtdp, item.Poor);
+            return RedirectToAction("Index");
         }
     }
 }

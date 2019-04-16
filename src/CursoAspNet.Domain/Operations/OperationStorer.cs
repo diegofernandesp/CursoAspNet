@@ -1,5 +1,4 @@
-﻿using CursoAspNet.Domain.Dto;
-using CursoAspNet.Domain.Orders;
+﻿using CursoAspNet.Domain.Orders;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -17,19 +16,19 @@ namespace CursoAspNet.Domain.Operations
             _OrderRepository = orderRepository;
         }
 
-        public void Store(OperationDto dto)
+        public void Store(int id, int orderId, string nope, int nseq, string dope)
         {
-            var order = _OrderRepository.GetById(dto.OrderId);
+            var order = _OrderRepository.GetById(orderId);
             DomainException.When(order == null, "Invalid Order");
 
-            var operation = _OperationRepository.GetById(dto.Id);
+            var operation = _OperationRepository.GetById(id);
             if (operation == null)
             {
-                operation = new Operation(order, dto.Nope, dto.Nseq, dto.Dope);
+                operation = new Operation(order, nope, nseq, dope);
                 _OperationRepository.Save(operation);
             }
             else
-                operation.Update(order, dto.Nope, dto.Nseq, dto.Dope);
+                operation.Update(order, nope, nseq, dope);
 
         }
     }

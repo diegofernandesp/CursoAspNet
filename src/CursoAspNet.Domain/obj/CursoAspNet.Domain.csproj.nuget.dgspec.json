@@ -1,33 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\José\\source\\repos\\CursoAspNet\\src\\CursoAspNet.Domain\\CursoAspNet.Domain.csproj": {}
+    "C:\\Users\\diego\\source\\repos\\CursoAspNet\\src\\CursoAspNet.Domain\\CursoAspNet.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\José\\source\\repos\\CursoAspNet\\src\\CursoAspNet.Domain\\CursoAspNet.Domain.csproj": {
+    "C:\\Users\\diego\\source\\repos\\CursoAspNet\\src\\CursoAspNet.Domain\\CursoAspNet.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\José\\source\\repos\\CursoAspNet\\src\\CursoAspNet.Domain\\CursoAspNet.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\diego\\source\\repos\\CursoAspNet\\src\\CursoAspNet.Domain\\CursoAspNet.Domain.csproj",
         "projectName": "CursoAspNet.Domain",
-        "projectPath": "C:\\Users\\José\\source\\repos\\CursoAspNet\\src\\CursoAspNet.Domain\\CursoAspNet.Domain.csproj",
-        "packagesPath": "C:\\Users\\José\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\José\\source\\repos\\CursoAspNet\\src\\CursoAspNet.Domain\\obj\\",
+        "projectPath": "C:\\Users\\diego\\source\\repos\\CursoAspNet\\src\\CursoAspNet.Domain\\CursoAspNet.Domain.csproj",
+        "packagesPath": "C:\\Users\\diego\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\diego\\source\\repos\\CursoAspNet\\src\\CursoAspNet.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\José\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
+          "C:\\Users\\diego\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://www.nuget.org/api/v2/": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.0": {
