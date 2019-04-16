@@ -8,5 +8,6 @@ namespace CursoAspNet.Domain
     {
         TEntity GetById(int id);
         void Save(TEntity entity);
+        IEnumerable<TEntity> All();
     }
 }

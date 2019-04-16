@@ -1,8 +1,10 @@
 ﻿@model CursoAspNet.Web.ViewModels.ItemViewModel
 
 @{
-    ViewData["Title"] = "CreateOrEdit";
+    ViewData["Title"] = "Items";
 }
+
+<a  asp-area="" asp-controller="Item" asp-action="Index" class="btn btn-warning">Back</a>
 
 <form id="form" method="post" asp-action="CreateOrEdit" asp-controller="Item" 
       data-ajax="true" data-ajax-method="POST" data-ajax-failure="formOnFail" data-ajax-success="window.location = '/Item'"
@@ -32,7 +34,7 @@
             <span asp-validation-for="Poor" class="text-danger"></span>
         </div>
     </div>
-    <button class="btn btn-success">Post</button>
+    <button class="btn btn-primary">Post</button>
 </form>
 
 @section Scripts  {

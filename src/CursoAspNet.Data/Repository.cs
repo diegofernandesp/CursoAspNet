@@ -23,5 +23,14 @@ namespace CursoAspNet.Data
         {
             _DbContext.Set<TEntity>().Add(entity);
         }
+
+        public virtual IEnumerable<TEntity> All()
+        {
+            var query = _DbContext.Set<TEntity>();
+            if (query.Any())
+                return query.ToList();
+
+            return new List<TEntity>();
+        }
     }
 }

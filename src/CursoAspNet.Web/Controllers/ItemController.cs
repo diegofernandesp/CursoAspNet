@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CursoAspNet.Domain;
 using CursoAspNet.Domain.Items;
 using CursoAspNet.Web.ViewModels;
 using Microsoft.AspNetCore.Mvc;
@@ -12,17 +13,28 @@ namespace CursoAspNet.Web.Controllers
     {
         private readonly ItemStorer _ItemStorer;
 
-        public ItemController(ItemStorer itemStorer)
+        private IRepository<Item> _ItemRepository;
+
+        public ItemController(ItemStorer itemStorer, IRepository<Item> itemRepository)
         {
             _ItemStorer = itemStorer;
+            _ItemRepository = itemRepository;
         }
         public IActionResult Index()
         {
-            return View();
+            var items = _ItemRepository.All();
+            var ViewModel = items.Select(i => new ItemViewModel { Id = i.Id, Citm = i.Citm, Ditm = i.Ditm, Poor = i.Poor, Qtdp = i.Qtdp });
+            return View(ViewModel);
         }
 
-        public IActionResult CreateOrEdit()
+        public IActionResult CreateOrEdit(int id)
         {
+            if (id > 0)
+            {
+                var item = _ItemRepository.GetById(id);
+                var viewModel = new ItemViewModel { Id = item.Id, Citm = item.Citm, Ditm = item.Ditm, Poor = item.Poor, Qtdp = item.Qtdp };
+                return View(viewModel);
+            }
             return View();
         }
 
