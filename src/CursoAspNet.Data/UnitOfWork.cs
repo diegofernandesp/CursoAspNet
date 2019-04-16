@@ -1,11 +1,12 @@
-﻿using System;
+﻿using CursoAspNet.Domain;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace CursoAspNet.Data
 {
-    public class UnitOfWork
+    public class UnitOfWork : IUnitOfWork
     {
         private readonly ApplicationDbContext _DbContext;
 
@@ -14,7 +15,7 @@ namespace CursoAspNet.Data
             _DbContext = dbContext;
         }
 
-        public async Task Save()
+        public async Task Commit()
         {
             await _DbContext.SaveChangesAsync();
         }
