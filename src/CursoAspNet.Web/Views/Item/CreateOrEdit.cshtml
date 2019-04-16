@@ -4,9 +4,10 @@
     ViewData["Title"] = "Items";
 }
 
-<a  asp-area="" asp-controller="Item" asp-action="Index" class="btn btn-warning">Back</a>
+<a asp-area="" asp-controller="Item" asp-action="Index" class="btn btn-warning">Back</a>
 
-<form id="form" method="post" asp-action="CreateOrEdit" asp-controller="Item" 
+<!--
+<form id="form" method="post" asp-action="CreateOrEdit" asp-controller="Item"
       data-ajax="true" data-ajax-method="POST" data-ajax-failure="formOnFail" data-ajax-success="window.location = '/Item'"
       asp-anti-forgery>
     <input type="hidden" class="form-control" asp-for="Id" />
@@ -36,9 +37,25 @@
     </div>
     <button class="btn btn-primary">Post</button>
 </form>
+-->
+<div id="form-demo">
+    <div class="widget-container">
+        @(Html.DevExtreme().Form()
+                    .ID("form")
+                    .ColCount(2)
+                    .FormData(Model)
+                    .LabelLocation(FormLabelLocation.Top)
+                    .MinColWidth(300)
+                    .ReadOnly(false)
+                    .ShowColonAfterLabel(true)
+        )
+        
+    </div>
+</div>
 
-@section Scripts  {
-    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
-    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
-    <script src="~/lib/jquery-validation-unobtrusive/jquery.unobtrusive-ajax.js"></script>
-}
+
+        @section Scripts  {
+            <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+            <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+            <script src="~/lib/jquery-validation-unobtrusive/jquery.unobtrusive-ajax.js"></script>
+        }

@@ -29,13 +29,15 @@ namespace CursoAspNet.Web.Controllers
 
         public IActionResult CreateOrEdit(int id)
         {
+            ItemViewModel viewModel;
             if (id > 0)
             {
                 var item = _ItemRepository.GetById(id);
-                var viewModel = new ItemViewModel { Id = item.Id, Citm = item.Citm, Ditm = item.Ditm, Poor = item.Poor, Qtdp = item.Qtdp };
+                viewModel = new ItemViewModel { Id = item.Id, Citm = item.Citm, Ditm = item.Ditm, Poor = item.Poor, Qtdp = item.Qtdp };
                 return View(viewModel);
             }
-            return View();
+            viewModel = new ItemViewModel();
+            return View(viewModel);
         }
 
         [HttpPost]
