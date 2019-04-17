@@ -9,9 +9,9 @@ C:\Users\José\source\repos\CursoAspNet\src\CursoAspNet.Domain\obj\Debug\netstan
 C:\Users\diego\source\repos\CursoAspNet\src\CursoAspNet.Domain\bin\Debug\netstandard2.0\CursoAspNet.Domain.deps.json
 C:\Users\diego\source\repos\CursoAspNet\src\CursoAspNet.Domain\bin\Debug\netstandard2.0\CursoAspNet.Domain.dll
 C:\Users\diego\source\repos\CursoAspNet\src\CursoAspNet.Domain\bin\Debug\netstandard2.0\CursoAspNet.Domain.pdb
-C:\Users\diego\source\repos\CursoAspNet\src\CursoAspNet.Domain\obj\Debug\netstandard2.0\CursoAspNet.Domain.csprojAssemblyReference.cache
 C:\Users\diego\source\repos\CursoAspNet\src\CursoAspNet.Domain\obj\Debug\netstandard2.0\CursoAspNet.Domain.csproj.CoreCompileInputs.cache
 C:\Users\diego\source\repos\CursoAspNet\src\CursoAspNet.Domain\obj\Debug\netstandard2.0\CursoAspNet.Domain.AssemblyInfoInputs.cache
 C:\Users\diego\source\repos\CursoAspNet\src\CursoAspNet.Domain\obj\Debug\netstandard2.0\CursoAspNet.Domain.AssemblyInfo.cs
 C:\Users\diego\source\repos\CursoAspNet\src\CursoAspNet.Domain\obj\Debug\netstandard2.0\CursoAspNet.Domain.dll
 C:\Users\diego\source\repos\CursoAspNet\src\CursoAspNet.Domain\obj\Debug\netstandard2.0\CursoAspNet.Domain.pdb
+C:\Users\diego\source\repos\CursoAspNet\src\CursoAspNet.Domain\obj\Debug\netstandard2.0\CursoAspNet.Domain.csprojAssemblyReference.cache

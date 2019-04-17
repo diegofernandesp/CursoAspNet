@@ -23,8 +23,8 @@ namespace CursoAspNet.Web.Controllers
         public IActionResult Index()
         {
             var items = _ItemRepository.All();
-            var ViewModel = items.Select(i => new ItemViewModel { Id = i.Id, Citm = i.Citm, Ditm = i.Ditm, Poor = i.Poor, Qtdp = i.Qtdp });
-            return View(ViewModel);
+            var ItemViewModel = items.Select(i => new ItemViewModel { Id = i.Id, Citm = i.Citm, Ditm = i.Ditm, Poor = i.Poor, Qtdp = i.Qtdp });
+            return View(ItemViewModel);
         }
 
         public IActionResult CreateOrEdit(int id)
