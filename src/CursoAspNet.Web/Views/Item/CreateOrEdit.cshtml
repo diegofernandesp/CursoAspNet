@@ -40,7 +40,9 @@
 </form>
 -->
 
+
 <div id="form-container">
+@using(Html.BeginForm()) {    
     @(Html.DevExtreme()
         .Form()
         .FormData(Model)
@@ -51,48 +53,53 @@
         .ColCountByScreen(c => c.Md(4).Sm(2))
         .Items(items =>
         {
-
-                    items.AddTabbed()
-                        .TabPanelOptions(o =>
-                        {
-                            o.DeferRendering(false);
-                        })
-                        .Tabs(tabItems =>
-                        {
-                            tabItems.Add()
-                                .Title("General")
-                                .Items(tabItem => tabItem.AddSimple().DataField("Citm"))                                
-                                .Items(tabItem => tabItem.AddSimple().DataField("Ditm"));
-                            tabItems.Add()
-                                .Title("Planning 1")
-                                .Items(tabItem => tabItem.AddSimple().DataField("Poor")
-                                    .Editor(e => e
-                                        .SelectBox()
-                                        .DataSource(new string[] {
-                                            "Manual",
-                                            "Max/Min"}
-                                        )
-                                        .Value("")
-                                    )
-                            );
-                            tabItems.Add()
-                                .Title("Planning 2");
-                            tabItems.Add()
-                                .Title("Plant Parameters");
-                            tabItems.Add()
-                                .Title("Sku Groups");
-                            tabItems.Add()
-                                .Title("Scheduling");
-                            tabItems.Add()
-                                .Title("Complementary Data");
-                            tabItems.Add()
-                                .Title("Batch Stock");
-                            tabItems.Add()
-                                .Title("Consumption History");
-                        });
-
-})
+            items.AddTabbed()
+                .TabPanelOptions(o =>
+                {
+                    o.DeferRendering(false);
+                })
+                .Tabs(tabItems =>
+                {
+                    tabItems.Add()
+                        .ColCount(6)
+                        .Title("General")
+                        .Items(tabItem => tabItem.AddSimple().DataField("Citm"))
+                        .Items(tabItem => tabItem.AddSimple().DataField("Ditm"));
+                    tabItems.Add()
+                        .Title("Planning 1")
+                        .Items(tabItem => tabItem.AddSimple().DataField("Poor")
+                            .Editor(e => e
+                                .SelectBox()
+                                .DataSource(new string[] {
+                                    "Manual",
+                                    "Max/Min"}
+                                )
+                                .Value("")
+                            )
+                    );
+                    tabItems.Add()
+                        .Title("Planning 2");
+                    tabItems.Add()
+                        .Title("Plant Parameters");
+                    tabItems.Add()
+                        .Title("Sku Groups");
+                    tabItems.Add()
+                        .Title("Scheduling");
+                    tabItems.Add()
+                        .Title("Complementary Data");
+                    tabItems.Add()
+                        .Title("Batch Stock");
+                    tabItems.Add()
+                        .Title("Consumption History");
+                });                
+        })
     )
+    @(Html.DevExtreme().Button()
+                        .Text("Post")
+                        .Type(ButtonType.Success)
+                        .UseSubmitBehavior(true)
+    )
+}
 </div>
 
 @section Scripts  {
