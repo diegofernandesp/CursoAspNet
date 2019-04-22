@@ -1,0 +1,17 @@
+﻿@model  CursoAspNet.Web.ViewModels.LoginViewModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form asp-controller="Account" asp-action="Login" method="post" class="form-horizontal">
+    <label asp-for="Email"></label>
+    <input asp-for="Email" class="form-control" />
+
+    <label asp-for="Password"></label>
+    <input asp-for="Password" class="form-control" />
+
+    <button type="submit" class="btn btn-primary">Log In</button>
+</form>
+

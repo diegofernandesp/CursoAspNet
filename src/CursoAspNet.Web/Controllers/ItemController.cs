@@ -5,10 +5,12 @@ using System.Threading.Tasks;
 using CursoAspNet.Domain;
 using CursoAspNet.Domain.Items;
 using CursoAspNet.Web.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CursoAspNet.Web.Controllers
 {
+    [Authorize]
     public class ItemController : Controller
     {
         private readonly ItemStorer _ItemStorer;

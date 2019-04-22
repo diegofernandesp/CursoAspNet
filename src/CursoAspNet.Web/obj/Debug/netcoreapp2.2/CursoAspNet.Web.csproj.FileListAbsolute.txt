@@ -74,3 +74,4 @@ C:\Users\diego\source\repos\CursoAspNet\src\CursoAspNet.Web\bin\Debug\netcoreapp
 C:\Users\diego\source\repos\CursoAspNet\src\CursoAspNet.Web\bin\Debug\netcoreapp2.2\CursoAspNet.Data.pdb
 C:\Users\diego\source\repos\CursoAspNet\src\CursoAspNet.Web\obj\Debug\netcoreapp2.2\CursoAspNet.Web.Views.pdb
 C:\Users\diego\source\repos\CursoAspNet\src\CursoAspNet.Web\obj\Debug\netcoreapp2.2\CursoAspNet.Web.csproj.CopyComplete
+C:\Users\José\source\repos\CursoAspNet\src\CursoAspNet.Web\obj\Debug\netcoreapp2.2\Razor\Views\Account\Login.g.cshtml.cs

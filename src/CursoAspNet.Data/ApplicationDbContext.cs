@@ -1,11 +1,13 @@
-﻿using CursoAspNet.Domain.Items;
+﻿using CursoAspNet.Data.Identity;
+using CursoAspNet.Domain.Items;
 using CursoAspNet.Domain.Operations;
 using CursoAspNet.Domain.Orders;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace CursoAspNet.Data
 {
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options): base(options)
         {
