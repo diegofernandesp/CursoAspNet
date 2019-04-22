@@ -1,37 +1,39 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\diego\\source\\repos\\CursoAspNet\\src\\CursoAspNet.Web\\CursoAspNet.Web.csproj": {}
+    "C:\\Users\\José\\source\\repos\\CursoAspNet\\src\\CursoAspNet.Web\\CursoAspNet.Web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\diego\\source\\repos\\CursoAspNet\\src\\CursoAspNet.Data\\CursoAspNet.Data.csproj": {
+    "C:\\Users\\José\\source\\repos\\CursoAspNet\\src\\CursoAspNet.Data\\CursoAspNet.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\diego\\source\\repos\\CursoAspNet\\src\\CursoAspNet.Data\\CursoAspNet.Data.csproj",
+        "projectUniqueName": "C:\\Users\\José\\source\\repos\\CursoAspNet\\src\\CursoAspNet.Data\\CursoAspNet.Data.csproj",
         "projectName": "CursoAspNet.Data",
-        "projectPath": "C:\\Users\\diego\\source\\repos\\CursoAspNet\\src\\CursoAspNet.Data\\CursoAspNet.Data.csproj",
-        "packagesPath": "C:\\Users\\diego\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\diego\\source\\repos\\CursoAspNet\\src\\CursoAspNet.Data\\obj\\",
+        "projectPath": "C:\\Users\\José\\source\\repos\\CursoAspNet\\src\\CursoAspNet.Data\\CursoAspNet.Data.csproj",
+        "packagesPath": "C:\\Users\\José\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\José\\source\\repos\\CursoAspNet\\src\\CursoAspNet.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\diego\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\José\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://www.nuget.org/api/v2/": {}
         },
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\diego\\source\\repos\\CursoAspNet\\src\\CursoAspNet.Domain\\CursoAspNet.Domain.csproj": {
-                "projectPath": "C:\\Users\\diego\\source\\repos\\CursoAspNet\\src\\CursoAspNet.Domain\\CursoAspNet.Domain.csproj"
+              "C:\\Users\\José\\source\\repos\\CursoAspNet\\src\\CursoAspNet.Domain\\CursoAspNet.Domain.csproj": {
+                "projectPath": "C:\\Users\\José\\source\\repos\\CursoAspNet\\src\\CursoAspNet.Domain\\CursoAspNet.Domain.csproj"
               }
             }
           }
@@ -72,34 +74,36 @@
         }
       }
     },
-    "C:\\Users\\diego\\source\\repos\\CursoAspNet\\src\\CursoAspNet.DI\\CursoAspNet.DI.csproj": {
+    "C:\\Users\\José\\source\\repos\\CursoAspNet\\src\\CursoAspNet.DI\\CursoAspNet.DI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\diego\\source\\repos\\CursoAspNet\\src\\CursoAspNet.DI\\CursoAspNet.DI.csproj",
+        "projectUniqueName": "C:\\Users\\José\\source\\repos\\CursoAspNet\\src\\CursoAspNet.DI\\CursoAspNet.DI.csproj",
         "projectName": "CursoAspNet.DI",
-        "projectPath": "C:\\Users\\diego\\source\\repos\\CursoAspNet\\src\\CursoAspNet.DI\\CursoAspNet.DI.csproj",
-        "packagesPath": "C:\\Users\\diego\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\diego\\source\\repos\\CursoAspNet\\src\\CursoAspNet.DI\\obj\\",
+        "projectPath": "C:\\Users\\José\\source\\repos\\CursoAspNet\\src\\CursoAspNet.DI\\CursoAspNet.DI.csproj",
+        "packagesPath": "C:\\Users\\José\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\José\\source\\repos\\CursoAspNet\\src\\CursoAspNet.DI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\diego\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\José\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://www.nuget.org/api/v2/": {}
         },
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\diego\\source\\repos\\CursoAspNet\\src\\CursoAspNet.Data\\CursoAspNet.Data.csproj": {
-                "projectPath": "C:\\Users\\diego\\source\\repos\\CursoAspNet\\src\\CursoAspNet.Data\\CursoAspNet.Data.csproj"
+              "C:\\Users\\José\\source\\repos\\CursoAspNet\\src\\CursoAspNet.Data\\CursoAspNet.Data.csproj": {
+                "projectPath": "C:\\Users\\José\\source\\repos\\CursoAspNet\\src\\CursoAspNet.Data\\CursoAspNet.Data.csproj"
               }
             }
           }
@@ -144,28 +148,30 @@
         }
       }
     },
-    "C:\\Users\\diego\\source\\repos\\CursoAspNet\\src\\CursoAspNet.Domain\\CursoAspNet.Domain.csproj": {
+    "C:\\Users\\José\\source\\repos\\CursoAspNet\\src\\CursoAspNet.Domain\\CursoAspNet.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\diego\\source\\repos\\CursoAspNet\\src\\CursoAspNet.Domain\\CursoAspNet.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\José\\source\\repos\\CursoAspNet\\src\\CursoAspNet.Domain\\CursoAspNet.Domain.csproj",
         "projectName": "CursoAspNet.Domain",
-        "projectPath": "C:\\Users\\diego\\source\\repos\\CursoAspNet\\src\\CursoAspNet.Domain\\CursoAspNet.Domain.csproj",
-        "packagesPath": "C:\\Users\\diego\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\diego\\source\\repos\\CursoAspNet\\src\\CursoAspNet.Domain\\obj\\",
+        "projectPath": "C:\\Users\\José\\source\\repos\\CursoAspNet\\src\\CursoAspNet.Domain\\CursoAspNet.Domain.csproj",
+        "packagesPath": "C:\\Users\\José\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\José\\source\\repos\\CursoAspNet\\src\\CursoAspNet.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\diego\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\José\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://www.nuget.org/api/v2/": {}
         },
         "frameworks": {
           "netstandard2.0": {
@@ -196,37 +202,39 @@
         }
       }
     },
-    "C:\\Users\\diego\\source\\repos\\CursoAspNet\\src\\CursoAspNet.Web\\CursoAspNet.Web.csproj": {
+    "C:\\Users\\José\\source\\repos\\CursoAspNet\\src\\CursoAspNet.Web\\CursoAspNet.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\diego\\source\\repos\\CursoAspNet\\src\\CursoAspNet.Web\\CursoAspNet.Web.csproj",
+        "projectUniqueName": "C:\\Users\\José\\source\\repos\\CursoAspNet\\src\\CursoAspNet.Web\\CursoAspNet.Web.csproj",
         "projectName": "CursoAspNet.Web",
-        "projectPath": "C:\\Users\\diego\\source\\repos\\CursoAspNet\\src\\CursoAspNet.Web\\CursoAspNet.Web.csproj",
-        "packagesPath": "C:\\Users\\diego\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\diego\\source\\repos\\CursoAspNet\\src\\CursoAspNet.Web\\obj\\",
+        "projectPath": "C:\\Users\\José\\source\\repos\\CursoAspNet\\src\\CursoAspNet.Web\\CursoAspNet.Web.csproj",
+        "packagesPath": "C:\\Users\\José\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\José\\source\\repos\\CursoAspNet\\src\\CursoAspNet.Web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\diego\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\José\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://www.nuget.org/api/v2/": {}
         },
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Users\\diego\\source\\repos\\CursoAspNet\\src\\CursoAspNet.DI\\CursoAspNet.DI.csproj": {
-                "projectPath": "C:\\Users\\diego\\source\\repos\\CursoAspNet\\src\\CursoAspNet.DI\\CursoAspNet.DI.csproj"
+              "C:\\Users\\José\\source\\repos\\CursoAspNet\\src\\CursoAspNet.DI\\CursoAspNet.DI.csproj": {
+                "projectPath": "C:\\Users\\José\\source\\repos\\CursoAspNet\\src\\CursoAspNet.DI\\CursoAspNet.DI.csproj"
               },
-              "C:\\Users\\diego\\source\\repos\\CursoAspNet\\src\\CursoAspNet.Domain\\CursoAspNet.Domain.csproj": {
-                "projectPath": "C:\\Users\\diego\\source\\repos\\CursoAspNet\\src\\CursoAspNet.Domain\\CursoAspNet.Domain.csproj"
+              "C:\\Users\\José\\source\\repos\\CursoAspNet\\src\\CursoAspNet.Domain\\CursoAspNet.Domain.csproj": {
+                "projectPath": "C:\\Users\\José\\source\\repos\\CursoAspNet\\src\\CursoAspNet.Domain\\CursoAspNet.Domain.csproj"
               }
             }
           }

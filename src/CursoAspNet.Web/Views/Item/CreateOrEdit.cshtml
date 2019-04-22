@@ -44,7 +44,7 @@
 <div id="form-container">
 @using(Html.BeginForm()) {    
     @(Html.DevExtreme()
-        .Form()
+        .Form()        
         .FormData(Model)
         .ID("form")
         .LabelLocation(FormLabelLocation.Top)
@@ -74,28 +74,15 @@
                                     "Manual",
                                     "Max/Min"}
                                 )
-                                .Value("")
-                            )
-                    );
-                    tabItems.Add()
-                        .Title("Planning 2");
-                    tabItems.Add()
-                        .Title("Plant Parameters");
-                    tabItems.Add()
-                        .Title("Sku Groups");
-                    tabItems.Add()
-                        .Title("Scheduling");
-                    tabItems.Add()
-                        .Title("Complementary Data");
-                    tabItems.Add()
-                        .Title("Batch Stock");
-                    tabItems.Add()
-                        .Title("Consumption History");
+                                .Value(@Model.Poor)
+                            )                        
+                        )
+                        .Items(tabItem => tabItem.AddSimple().DataField("Qtdp"));
                 });                
         })
     )
     @(Html.DevExtreme().Button()
-                        .Text("Post")
+                        .Text("Post")                        
                         .Type(ButtonType.Success)
                         .UseSubmitBehavior(true)
     )
